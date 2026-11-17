@@ -3306,6 +3306,21 @@ Description: source APT et clé du dépôt mawena
  Installe la source https://mawena.github.io/apt (Paquets Ubuntu de mawena) et la clé
  qui signe ses index, pour que apt upgrade apporte les nouvelles versions.
 
+Package: mawena-depot
+Version: 0.2.0
+Architecture: all
+Maintainer: Charles GAMLIGO <57989130+mawena@users.noreply.github.com>
+Filename: pool/main/depot/mawena-depot_0.2.0_all.deb
+Size: 1460
+MD5sum: d977c888407c6852fb3e71b4eaa75da4
+SHA1: 853ceac6220dfde823e6de732435511a83515c78
+SHA256: 08b52bb92809c42f1e10f2a889ea5ba815d22223262d4b74d83e38bb576b71da
+Section: misc
+Priority: optional
+Description: source APT et clé du dépôt mawena
+ Installe la source https://apt.mawena.cloud (Paquets Ubuntu de mawena) et la clé
+ qui signe ses index, pour que apt upgrade apporte les nouvelles versions.
+
 Package: ricochet-depot
 Version: 0.1.0
 Architecture: all

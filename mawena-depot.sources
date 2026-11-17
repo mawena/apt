@@ -1,5 +1,5 @@
 Types: deb
-URIs: https://mawena.github.io/apt
+URIs: https://apt.mawena.cloud
 Suites: stable
 Components: main
 Signed-By: /usr/share/keyrings/mawena-depot.gpg

@@ -1,11 +1,11 @@
 #!/bin/sh
 # Ajoute le dépôt APT signé de mawena, puis installe les paquets demandés.
-#   curl -fsSL https://mawena.github.io/apt/installer.sh | sudo sh                    (dépôt seul)
-#   curl -fsSL https://mawena.github.io/apt/installer.sh | sudo sh -s -- gagarine ccs (dépôt et paquets)
+#   curl -fsSL https://apt.mawena.cloud/installer.sh | sudo sh                    (dépôt seul)
+#   curl -fsSL https://apt.mawena.cloud/installer.sh | sudo sh -s -- gagarine ccs (dépôt et paquets)
 # Ensuite, `sudo apt update && sudo apt upgrade` apporte les nouvelles versions.
 set -eu
 
-DEPOT=https://mawena.github.io/apt
+DEPOT=https://apt.mawena.cloud
 CLE=/usr/share/keyrings/mawena-depot.gpg
 SOURCE=/etc/apt/sources.list.d/mawena-depot.sources
 
