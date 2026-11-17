@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dépôt APT de mawena</title>
+<meta name="description" content="Un seul dépôt APT signé pour tous les paquets Ubuntu de mawena.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Dépôt APT de mawena</h1>
+<p class="chapeau">Un seul dépôt signé pour tous mes paquets Ubuntu : on l'ajoute une fois, puis
+<code>sudo apt install &lt;paquet&gt;</code> pour n'importe lequel et <code>sudo apt upgrade</code> pour tous.</p>
+
+<h2>Installation en une ligne</h2>
+<pre>curl -fsSL https://mawena.github.io/apt/installer.sh | sudo sh -s -- gagarine ccs</pre>
+<p>Sans nom de paquet, le script ajoute seulement le dépôt. Il installe aussi le paquet
+<code>mawena-depot</code>, qui garde la clé et la source à jour.</p>
+
+<h2>Pas à pas</h2>
+<pre>sudo curl -fsSL -o /usr/share/keyrings/mawena-depot.gpg https://mawena.github.io/apt/mawena-depot.gpg
+sudo curl -fsSL -o /etc/apt/sources.list.d/mawena-depot.sources https://mawena.github.io/apt/mawena-depot.sources
+sudo apt update
+sudo apt install mawena-depot &lt;paquet&gt;</pre>
+<p>La source installée :</p>
+<pre>Types: deb
+URIs: https://mawena.github.io/apt
+Suites: stable
+Components: main
+Signed-By: /usr/share/keyrings/mawena-depot.gpg</pre>
+<p>Mises à jour : <code>sudo apt update &amp;&amp; sudo apt upgrade</code>.</p>
+<p>Empreinte de la clé « mawena APT » : <code>60A2 0BB2 21C9 1DAD F39D D55B 456B 0129 30FA 901D</code>
+(<a href="mawena-depot.asc">clé publique</a>).</p>
+
+<h2>Paquets (12)</h2>
+<div class="tableau">
+<table>
+<thead><tr><th>Paquet</th><th>Version</th><th>Arch.</th><th>Projet</th><th>Description</th><th></th></tr></thead>
+<tbody>
+<tr><td><code>ccs</code></td><td>0.20.0</td><td>all</td><td><a href="https://github.com/mawena/CCS">CCS</a></td><td>multi-account switcher and usage assistant for Claude Code</td><td><a href="pool/main/ccs/ccs_0.20.0_all.deb">.deb</a></td></tr>
+<tr><td><code>ccs-all</code></td><td>0.20.0</td><td>all</td><td><a href="https://github.com/mawena/CCS">CCS</a></td><td>CCS, complete: command line, desktop application and server</td><td><a href="pool/main/ccs/ccs-all_0.20.0_all.deb">.deb</a></td></tr>
+<tr><td><code>ccs-bureau</code></td><td>0.20.0</td><td>all</td><td><a href="https://github.com/mawena/CCS">CCS</a></td><td>CCS desktop application (GTK) for several Claude Code accounts</td><td><a href="pool/main/ccs/ccs-bureau_0.20.0_all.deb">.deb</a></td></tr>
+<tr><td><code>ccs-serveur</code></td><td>0.20.0</td><td>all</td><td><a href="https://github.com/mawena/CCS">CCS</a></td><td>CCS server: drive Claude Code from a browser, phone or terminal</td><td><a href="pool/main/ccs/ccs-serveur_0.20.0_all.deb">.deb</a></td></tr>
+<tr><td><code>gagarine</code></td><td>1.5.2</td><td>all</td><td><a href="https://github.com/mawena/gagarine">Gagarine</a></td><td>RAM guard that freezes the program filling the memory</td><td><a href="pool/main/gagarine/gagarine_1.5.2_all.deb">.deb</a></td></tr>
+<tr><td><code>gigit</code></td><td>0.1.1-1</td><td>amd64</td><td><a href="https://github.com/mawena/GiGit">GiGit</a></td><td>Client git graphique inspiré d&#x27;ungit / A friendly graphical git client</td><td><a href="pool/main/gigit/gigit_0.1.1-1_amd64.deb">.deb</a></td></tr>
+<tr><td><code>mawena-depot</code></td><td>0.1.0</td><td>all</td><td>Depot</td><td>source APT et clé du dépôt mawena</td><td><a href="pool/main/depot/mawena-depot_0.1.0_all.deb">.deb</a></td></tr>
+<tr><td><code>ricochet-agent</code></td><td>0.2.1</td><td>amd64</td><td><a href="https://github.com/mawena/Ricochet">Ricochet</a></td><td>agent de Ricochet, contrôle à distance de machines</td><td><a href="pool/main/ricochet/ricochet-agent_0.2.1_amd64.deb">.deb</a></td></tr>
+<tr><td><code>ricochet-depot</code></td><td>0.2.1</td><td>all</td><td><a href="https://github.com/mawena/Ricochet">Ricochet</a></td><td>dépôt APT de Ricochet</td><td><a href="pool/main/ricochet/ricochet-depot_0.2.1_all.deb">.deb</a></td></tr>
+<tr><td><code>ricochet-serveur</code></td><td>0.2.1</td><td>amd64</td><td><a href="https://github.com/mawena/Ricochet">Ricochet</a></td><td>relais de Ricochet, contrôle à distance de machines</td><td><a href="pool/main/ricochet/ricochet-serveur_0.2.1_amd64.deb">.deb</a></td></tr>
+<tr><td><code>sesame</code></td><td>2.0.2</td><td>all</td><td><a href="https://github.com/mawena/sesame">Sésame</a></td><td>join an Ubuntu desktop to Microsoft Entra ID with Himmelblau</td><td><a href="pool/main/sesame/sesame_2.0.2_all.deb">.deb</a></td></tr>
+<tr><td><code>voix-la</code></td><td>0.20.1</td><td>all</td><td><a href="https://github.com/mawena/Voix-la">Voix-là</a></td><td>dub videos with a cloned voice, using the free Kaggle GPU</td><td><a href="pool/main/voix-la/voix-la_0.20.1_all.deb">.deb</a></td></tr>
+</tbody>
+</table>
+</div>
+<p>Les anciennes versions restent disponibles :
+<code>sudo apt install &lt;paquet&gt;=&lt;version&gt;</code>.</p>
+
+<footer>Publié par <a href="https://github.com/mawena">mawena</a>. Les dépôts APT propres à chaque
+projet restent en service pendant la transition.</footer>
+</main>
+</body>
+</html>

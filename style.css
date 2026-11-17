@@ -1,0 +1,19 @@
+:root { --fond: #f7f7f5; --texte: #1d1d1f; --doux: #5f6368; --accent: #2b59c3; --carte: #fff; --bord: #e2e2e0; }
+@media (prefers-color-scheme: dark) {
+  :root { --fond: #151517; --texte: #ececef; --doux: #a0a0a8; --accent: #7aa2ff; --carte: #1f1f23; --bord: #303036; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Ubuntu, sans-serif; background: var(--fond); color: var(--texte); }
+main { max-width: 980px; margin: 0 auto; padding: 2.5rem 1.2rem 4rem; }
+h1 { font-size: 2rem; margin: 0 0 .3rem; }
+h2 { margin-top: 2.4rem; font-size: 1.25rem; }
+p.chapeau { color: var(--doux); margin-top: 0; font-size: 1.1rem; }
+a { color: var(--accent); }
+pre, code { font-family: ui-monospace, "Ubuntu Mono", Menlo, monospace; font-size: .92em; }
+pre { background: var(--carte); border: 1px solid var(--bord); border-radius: 10px; padding: .9rem 1rem; overflow-x: auto; }
+.tableau { overflow-x: auto; background: var(--carte); border: 1px solid var(--bord); border-radius: 10px; }
+table { border-collapse: collapse; width: 100%; }
+th, td { text-align: left; padding: .55rem .8rem; border-bottom: 1px solid var(--bord); vertical-align: top; }
+tr:last-child td { border-bottom: 0; }
+th { font-size: .85rem; text-transform: uppercase; letter-spacing: .04em; color: var(--doux); }
+footer { margin-top: 3rem; color: var(--doux); font-size: .9rem; }
