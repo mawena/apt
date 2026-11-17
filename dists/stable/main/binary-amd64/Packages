@@ -138,6 +138,26 @@ Description: agent de Ricochet, contrôle à distance de machines
  configuration le permet, ouvre des terminaux à la demande de l'opérateur.
  Configuration : /etc/ricochet/agent.toml, donnée par l'interface du relais.
 
+Package: ricochet-agent
+Version: 0.2.2
+Architecture: amd64
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 5236
+Depends: libc6 (>= 2.39), libgcc-s1, ricochet-depot (= 0.2.2)
+Filename: pool/main/ricochet/ricochet-agent_0.2.2_amd64.deb
+Size: 1737592
+MD5sum: 780e740aae389cb4dceb16f7c6b4b52f
+SHA1: 047a30abb17ca9da7eca75d241bf7cfef05716aa
+SHA256: ab32729be43046c2cd6ddfece6fe9f73b25e320ef3ef1e32a4af2010d8eb9dfc
+Section: admin
+Priority: optional
+Homepage: https://mawena.github.io/Ricochet/
+Description: agent de Ricochet, contrôle à distance de machines
+ L'agent ouvre une connexion sortante chiffrée vers le relais de Ricochet, lui
+ envoie l'état de la machine (processeur, mémoire, disques) et, si sa
+ configuration le permet, ouvre des terminaux à la demande de l'opérateur.
+ Configuration : /etc/ricochet/agent.toml, donnée par l'interface du relais.
+
 Package: ricochet-serveur
 Version: 0.1.0
 Architecture: amd64
@@ -243,6 +263,27 @@ Description: relais de Ricochet, contrôle à distance de machines
  interface web (état des machines, terminal dans le navigateur, journal
  d'audit) et son service systemd. nginx assure le HTTPS devant lui.
 
+Package: ricochet-serveur
+Version: 0.2.2
+Architecture: amd64
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 6784
+Depends: libc6 (>= 2.34), libgcc-s1, adduser, ricochet-depot (= 0.2.2)
+Filename: pool/main/ricochet/ricochet-serveur_0.2.2_amd64.deb
+Size: 2313772
+MD5sum: 356161abff4b7f197456b4aeeff068ca
+SHA1: 7341d4319a80518198c2501ea6d229c0c90a0648
+SHA256: 3bdddf1f06779ecc09eeda6d210809b4f74fa4da704700c066b5e4fcc14ed7f2
+Section: admin
+Priority: optional
+Homepage: https://mawena.github.io/Ricochet/
+Description: relais de Ricochet, contrôle à distance de machines
+ Ricochet commande des machines à distance, même sans adresse IP publique :
+ chaque machine fait tourner un agent qui se connecte au relais par une
+ connexion sortante (WebSocket sur TLS). Ce paquet installe le relais, son
+ interface web (état des machines, terminal dans le navigateur, journal
+ d'audit) et son service systemd. nginx assure le HTTPS devant lui.
+
 Package: vigie
 Version: 0.1.0
 Architecture: amd64
@@ -301,6 +342,29 @@ Size: 1673788
 MD5sum: ee56442140277dcbb0b635c78c6a4236
 SHA1: b2df61e69a88d4fc898900b1ce56736772ea60d3
 SHA256: a3cdb4b2db85d83bc50043b7c75dc451e4883d1a8e4ce77b0c184d7a748df4f1
+Section: admin
+Priority: optional
+Homepage: https://mawena.github.io/Vigie/
+Description: surveillance légère d'un serveur, alertes sur le téléphone
+ Vigie surveille un serveur sans root : disques, mémoire, charge,
+ températures, unités systemd, conteneurs Docker, machines libvirt, sites
+ HTTP(S), certificats TLS, DNS et âge des sauvegardes. Il prévient sur le
+ téléphone (ntfy, Telegram ou e-mail) avec durée minimale, rappels et retour
+ à la normale, garde un historique court dans SQLite et sert un petit
+ tableau de bord web. Un seul binaire, une dizaine de Mo de mémoire.
+
+Package: vigie
+Version: 0.3.1
+Architecture: amd64
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 4216
+Depends: libc6 (>= 2.39), libgcc-s1, mawena-depot
+Suggests: docker.io, libvirt-clients
+Filename: pool/main/vigie/vigie_0.3.1_amd64.deb
+Size: 1672976
+MD5sum: ec2b202a63fce2ad4d822224677a2d62
+SHA1: fb5911621eca6040ea66adc21daf4b9d42b072c2
+SHA256: f01477485daaef4e02e1e4a902d6eb14972cde2d9bc4d9588d3039501a0d273c
 Section: admin
 Priority: optional
 Homepage: https://mawena.github.io/Vigie/
