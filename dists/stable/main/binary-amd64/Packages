@@ -38,29 +38,6 @@ Description: Client git graphique inspiré d'ungit / A friendly graphical git cl
  hunks or single lines, commit, amend, fetch, pull and push. French and English
  interface, several colour themes.
 
-Package: portier
-Version: 0.1.0
-Architecture: amd64
-Maintainer: mawena <57989130+mawena@users.noreply.github.com>
-Installed-Size: 2204
-Depends: libc6 (>= 2.34), libgcc-s1, mawena-depot
-Suggests: nginx
-Filename: pool/main/portier/portier_0.1.0_amd64.deb
-Size: 919048
-MD5sum: 3ea0c5dcfe567cb9379959ddaafe03e9
-SHA1: 05eddf292eaa0ec67ac08bcd9725bd6d85700941
-SHA256: 851ef348f54c5c0f27deb9a50ebe224859129dc22699a2c6d98c6dc41103e218
-Section: net
-Priority: optional
-Homepage: https://github.com/mawena/Portier
-Description: connexion unique et double facteur devant nginx
- Portier est une seule porte d'entrée pour les services web d'un domaine :
- connexion unique (cookie valable sur tous les sous-domaines), mot de passe
- Argon2id puis code TOTP, droits par service, page d'accueil des services et
- journal des connexions. nginx le consulte avant chaque requête par la
- directive auth_request. Comptes créés par lien d'invitation. Un seul
- binaire, quelques Mo de mémoire, base SQLite.
-
 Package: ricochet-agent
 Version: 0.1.0
 Architecture: amd64
