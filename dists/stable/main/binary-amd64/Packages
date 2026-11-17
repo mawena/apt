@@ -416,3 +416,26 @@ Description: surveillance légère d'un serveur, alertes sur le téléphone
  téléphone (ntfy, Telegram ou e-mail) avec durée minimale, rappels et retour
  à la normale, garde un historique court dans SQLite et sert un petit
  tableau de bord web. Un seul binaire, une dizaine de Mo de mémoire.
+
+Package: vigie
+Version: 0.4.0
+Architecture: amd64
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 4192
+Depends: libc6 (>= 2.39), libgcc-s1, mawena-depot
+Suggests: docker.io, libvirt-clients
+Filename: pool/main/vigie/vigie_0.4.0_amd64.deb
+Size: 1666080
+MD5sum: 48fbe869caa069b8e9b759dc1e298826
+SHA1: 049406a4212f0106df533858e289ca84eb0ffe70
+SHA256: 1c5cdc785c149c84e5d62f33217a664544b0b0cbb5911f595259dc1fe53e3192
+Section: admin
+Priority: optional
+Homepage: https://mawena.github.io/Vigie/
+Description: surveillance légère d'un serveur, alertes sur le téléphone
+ Vigie surveille un serveur sans root : disques, mémoire, charge,
+ températures, unités systemd, conteneurs Docker, machines libvirt, sites
+ HTTP(S), certificats TLS, DNS et âge des sauvegardes. Il prévient sur le
+ téléphone (ntfy, Telegram ou e-mail) avec durée minimale, rappels et retour
+ à la normale, garde un historique court dans SQLite et sert un petit
+ tableau de bord web. Un seul binaire, une dizaine de Mo de mémoire.
