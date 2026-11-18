@@ -38,6 +38,236 @@ Description: Client git graphique inspiré d'ungit / A friendly graphical git cl
  hunks or single lines, commit, amend, fetch, pull and push. French and English
  interface, several colour themes.
 
+Package: portier
+Version: 0.1.0
+Architecture: amd64
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 2204
+Depends: libc6 (>= 2.34), libgcc-s1, mawena-depot
+Suggests: nginx
+Filename: pool/main/portier/portier_0.1.0_amd64.deb
+Size: 919048
+MD5sum: 3ea0c5dcfe567cb9379959ddaafe03e9
+SHA1: 05eddf292eaa0ec67ac08bcd9725bd6d85700941
+SHA256: 851ef348f54c5c0f27deb9a50ebe224859129dc22699a2c6d98c6dc41103e218
+Section: net
+Priority: optional
+Homepage: https://github.com/mawena/Portier
+Description: connexion unique et double facteur devant nginx
+ Portier est une seule porte d'entrée pour les services web d'un domaine :
+ connexion unique (cookie valable sur tous les sous-domaines), mot de passe
+ Argon2id puis code TOTP, droits par service, page d'accueil des services et
+ journal des connexions. nginx le consulte avant chaque requête par la
+ directive auth_request. Comptes créés par lien d'invitation. Un seul
+ binaire, quelques Mo de mémoire, base SQLite.
+
+Package: portier
+Version: 0.2.0
+Architecture: amd64
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 2232
+Depends: libc6 (>= 2.34), libgcc-s1, libpam0g, libpam-modules, mawena-depot
+Suggests: nginx
+Filename: pool/main/portier/portier_0.2.0_amd64.deb
+Size: 923592
+MD5sum: 7dca7551863b7ad6347d5981b6f960c3
+SHA1: 069df4cb4c709be332270cd1fb5e4f24752991d4
+SHA256: 16b56da22645d9eb814463aea45a37bf7beb34a9eb71d92d1bd79a71e7c87b53
+Section: net
+Priority: optional
+Homepage: https://github.com/mawena/Portier
+Description: connexion unique et double facteur devant nginx
+ Portier est une seule porte d'entrée pour les services web d'un domaine :
+ connexion unique (cookie valable sur tous les sous-domaines), mot de passe
+ Argon2id ou compte Ubuntu (PAM), puis code TOTP, droits par service, page
+ d'accueil des services et journal des connexions. nginx le consulte avant
+ chaque requête par la directive auth_request. Comptes créés par lien
+ d'invitation. Un seul binaire, quelques Mo de mémoire, base SQLite.
+
+Package: portier
+Version: 0.2.1
+Architecture: amd64
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 2232
+Depends: libc6 (>= 2.34), libgcc-s1, libpam0g, libpam-modules, mawena-depot
+Suggests: nginx
+Filename: pool/main/portier/portier_0.2.1_amd64.deb
+Size: 921692
+MD5sum: 2731838f9dd4afcb531aa93a5c8d6086
+SHA1: bf13fd9596d91f9fbba0804653f12d43cbc429c3
+SHA256: d6d329c07e0d58c16d7168af325948151fa4f4e9af4d3beddfa6c44c939ac1ea
+Section: net
+Priority: optional
+Homepage: https://github.com/mawena/Portier
+Description: connexion unique et double facteur devant nginx
+ Portier est une seule porte d'entrée pour les services web d'un domaine :
+ connexion unique (cookie valable sur tous les sous-domaines), mot de passe
+ Argon2id ou compte Ubuntu (PAM), puis code TOTP, droits par service, page
+ d'accueil des services et journal des connexions. nginx le consulte avant
+ chaque requête par la directive auth_request. Comptes créés par lien
+ d'invitation. Un seul binaire, quelques Mo de mémoire, base SQLite.
+
+Package: portier
+Version: 0.2.2
+Architecture: amd64
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 2232
+Depends: libc6 (>= 2.34), libgcc-s1, libpam0g, libpam-modules, mawena-depot
+Suggests: nginx
+Filename: pool/main/portier/portier_0.2.2_amd64.deb
+Size: 921948
+MD5sum: 11c0e0f5bc64ac9284d5721ba414163a
+SHA1: c5d246187218443b492bc1428950c1efffe755a5
+SHA256: 14c7b85604c16e125d5a2ae0b5ac0ae521653a4cf548fc42b86d1d0be00a2887
+Section: net
+Priority: optional
+Homepage: https://github.com/mawena/Portier
+Description: connexion unique et double facteur devant nginx
+ Portier est une seule porte d'entrée pour les services web d'un domaine :
+ connexion unique (cookie valable sur tous les sous-domaines), mot de passe
+ Argon2id ou compte Ubuntu (PAM), puis code TOTP, droits par service, page
+ d'accueil des services et journal des connexions. nginx le consulte avant
+ chaque requête par la directive auth_request. Comptes créés par lien
+ d'invitation. Un seul binaire, quelques Mo de mémoire, base SQLite.
+
+Package: portier
+Version: 0.3.0
+Architecture: amd64
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 2744
+Depends: libc6 (>= 2.34), libgcc-s1, libpam0g, libpam-modules, mawena-depot
+Suggests: nginx
+Filename: pool/main/portier/portier_0.3.0_amd64.deb
+Size: 1106348
+MD5sum: e3660160ae2d0aa42036d367ce0178bd
+SHA1: 8f0556c9aa3d03dcd99def160d007f2abc7c6d47
+SHA256: 51aaf255396d2ba0ceb37877ea422d11a5a9469ecf7dfd8ae83e0d637d1e36e5
+Section: net
+Priority: optional
+Homepage: https://github.com/mawena/Portier
+Description: connexion unique et double facteur devant nginx
+ Portier est une seule porte d'entrée pour les services web d'un domaine :
+ connexion unique (cookie valable sur tous les sous-domaines), mot de passe
+ Argon2id ou compte Ubuntu (PAM), puis code TOTP, droits par service, page
+ d'accueil des services et journal des connexions. nginx le consulte avant
+ chaque requête par la directive auth_request. Comptes créés par lien
+ d'invitation. Un seul binaire, quelques Mo de mémoire, base SQLite.
+
+Package: portier
+Version: 0.4.0
+Architecture: amd64
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 2748
+Depends: libc6 (>= 2.34), libgcc-s1, libpam0g, libpam-modules, mawena-depot
+Suggests: nginx
+Filename: pool/main/portier/portier_0.4.0_amd64.deb
+Size: 1104012
+MD5sum: d68beec802e0f807ddd5e14d68405b98
+SHA1: 9d467e61ff27bd390c62613d10ac7cb77d0a5033
+SHA256: 4108c952e23ac037396e7a546829e2b094b6f767011c712f693e013c34140122
+Section: net
+Priority: optional
+Homepage: https://github.com/mawena/Portier
+Description: connexion unique et double facteur devant nginx
+ Portier est une seule porte d'entrée pour les services web d'un domaine :
+ connexion unique (cookie valable sur tous les sous-domaines), mot de passe
+ Argon2id ou compte Ubuntu (PAM), puis code TOTP, droits par service, page
+ d'accueil des services et journal des connexions. nginx le consulte avant
+ chaque requête par la directive auth_request. Comptes créés par lien
+ d'invitation. Un seul binaire, quelques Mo de mémoire, base SQLite.
+
+Package: portier
+Version: 0.5.0
+Architecture: amd64
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 2760
+Depends: libc6 (>= 2.34), libgcc-s1, libpam0g, libpam-modules, mawena-depot
+Suggests: nginx
+Filename: pool/main/portier/portier_0.5.0_amd64.deb
+Size: 1109104
+MD5sum: 063cb441861b6e77505d6691cdee6821
+SHA1: 58e483b9c19c6a524879131e0140ac274e0a839f
+SHA256: 8c6afedc8bf159c80ecd5624236eaba44e50aeaf00499081d21a580777a4456e
+Section: net
+Priority: optional
+Homepage: https://github.com/mawena/Portier
+Description: connexion unique et double facteur devant nginx
+ Portier est une seule porte d'entrée pour les services web d'un domaine :
+ connexion unique (cookie valable sur tous les sous-domaines), mot de passe
+ Argon2id ou compte Ubuntu (PAM), puis code TOTP, droits par service, page
+ d'accueil des services et journal des connexions. nginx le consulte avant
+ chaque requête par la directive auth_request. Comptes créés par lien
+ d'invitation. Un seul binaire, quelques Mo de mémoire, base SQLite.
+
+Package: portier
+Version: 0.6.0
+Architecture: amd64
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 2848
+Depends: libc6 (>= 2.34), libgcc-s1, libpam0g, libpam-modules, mawena-depot
+Suggests: nginx
+Filename: pool/main/portier/portier_0.6.0_amd64.deb
+Size: 1168592
+MD5sum: 21a5f4f0e1d7845ec449c42b936d0001
+SHA1: fe4cbdde35da262c729629dd1a5df7c4c4185b4a
+SHA256: 7c45e6d84271365f6b873cd5f948ee192d32d5d9c2c1ce069ed5b7a1494a17aa
+Section: net
+Priority: optional
+Homepage: https://github.com/mawena/Portier
+Description: connexion unique et double facteur devant nginx
+ Portier est une seule porte d'entrée pour les services web d'un domaine :
+ connexion unique (cookie valable sur tous les sous-domaines), mot de passe
+ Argon2id ou compte Ubuntu (PAM), puis code TOTP, droits par service, page
+ d'accueil des services et journal des connexions. nginx le consulte avant
+ chaque requête par la directive auth_request. Comptes créés par lien
+ d'invitation. Un seul binaire, quelques Mo de mémoire, base SQLite.
+
+Package: portier
+Version: 0.7.0
+Architecture: amd64
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 3008
+Depends: libc6 (>= 2.34), libgcc-s1, libpam0g, libpam-modules, mawena-depot
+Suggests: nginx
+Filename: pool/main/portier/portier_0.7.0_amd64.deb
+Size: 1220772
+MD5sum: a1b9644dfbfdb1906685518f5b2e3954
+SHA1: 3079635c821eba99ea0d070dac365a7cadf8646d
+SHA256: be4b322a70d72c6b4eec41dacaf6b41d0ad33dee2cae9f0c5cfa2288a4cd0309
+Section: net
+Priority: optional
+Homepage: https://github.com/mawena/Portier
+Description: connexion unique et double facteur devant nginx
+ Portier est une seule porte d'entrée pour les services web d'un domaine :
+ connexion unique (cookie valable sur tous les sous-domaines), mot de passe
+ Argon2id ou compte Ubuntu (PAM), puis code TOTP, droits par service, page
+ d'accueil des services et journal des connexions. nginx le consulte avant
+ chaque requête par la directive auth_request. Comptes créés par lien
+ d'invitation. Un seul binaire, quelques Mo de mémoire, base SQLite.
+
+Package: portier
+Version: 0.8.0
+Architecture: amd64
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 4648
+Depends: libc6 (>= 2.34), libgcc-s1, libpam0g, libpam-modules, mawena-depot
+Suggests: nginx
+Filename: pool/main/portier/portier_0.8.0_amd64.deb
+Size: 1879952
+MD5sum: 45b6a1ed2cdabb21cdc850f287dd68b9
+SHA1: 410d653b93c847a07be810c8fca6549ab82303f1
+SHA256: 41e98d76787c2fa06fe5d0ccd8defb81f8703db528513eca86d5f6dae35a23fa
+Section: net
+Priority: optional
+Homepage: https://github.com/mawena/Portier
+Description: connexion unique et double facteur devant nginx
+ Portier est une seule porte d'entrée pour les services web d'un domaine :
+ connexion unique (cookie valable sur tous les sous-domaines), mot de passe
+ Argon2id ou compte Ubuntu (PAM), puis code TOTP, droits par service, page
+ d'accueil des services et journal des connexions. nginx le consulte avant
+ chaque requête par la directive auth_request. Comptes créés par lien
+ d'invitation. Un seul binaire, quelques Mo de mémoire, base SQLite.
+
 Package: ricochet-agent
 Version: 0.1.0
 Architecture: amd64
