@@ -1,3 +1,91 @@
+Package: coffre
+Version: 0.1.0
+Architecture: amd64
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 29416
+Depends: libc6 (>= 2.39), libgcc-s1, openssh-client
+Suggests: mariadb-client | default-mysql-client, postgresql-client
+Filename: pool/main/coffre/coffre_0.1.0_amd64.deb
+Size: 7985060
+MD5sum: 417cb0c954bbf78cfbeb626027f4d659
+SHA1: 6aa23f342917448b6f8cd5c1f9a8a00d74d6111f
+SHA256: 886f47dbe26c0d43afd8d8a82197bffd90e178daf062e98ffb0d53837ef0b886
+Section: admin
+Priority: optional
+Homepage: https://github.com/mawena/Coffre
+Description: sauvegardes chiffrées et dédupliquées, restauration simple
+ Coffre sauvegarde des dossiers et des bases (MySQL/MariaDB, PostgreSQL ou
+ toute commande) vers plusieurs destinations : dossier local, disque externe,
+ autre machine par SFTP, stockage distant (B2, S3…). Les données sont
+ chiffrées avant de partir et dédupliquées, au format restic. Rétention,
+ vérification par relecture réelle, rapport pour Vigie, minuteurs systemd.
+
+Package: coffre
+Version: 0.2.0
+Architecture: amd64
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 29912
+Depends: libc6 (>= 2.39), libgcc-s1, openssh-client
+Suggests: mariadb-client | default-mysql-client, postgresql-client
+Filename: pool/main/coffre/coffre_0.2.0_amd64.deb
+Size: 8121616
+MD5sum: ab125ceefddf48c34f2bd03dfe6809f2
+SHA1: 07bc34cdcb01249e75deb1c48ba927a4f92d6e92
+SHA256: f9198ecc8e98360c324f511aac5baaa21d753d24bd03449d26ffe337da39ac18
+Section: admin
+Priority: optional
+Homepage: https://github.com/mawena/Coffre
+Description: sauvegardes chiffrées et dédupliquées, restauration simple
+ Coffre sauvegarde des dossiers et des bases (MySQL/MariaDB, PostgreSQL ou
+ toute commande) vers plusieurs destinations : dossier local, disque externe,
+ autre machine par SFTP, stockage distant (B2, S3…). Les données sont
+ chiffrées avant de partir et dédupliquées, au format restic. Rétention,
+ vérification par relecture réelle, rapport pour Vigie, minuteurs systemd.
+
+Package: coffre
+Version: 0.3.0
+Architecture: amd64
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 29900
+Depends: libc6 (>= 2.39), libgcc-s1, openssh-client
+Suggests: mariadb-client | default-mysql-client, postgresql-client
+Filename: pool/main/coffre/coffre_0.3.0_amd64.deb
+Size: 8112924
+MD5sum: e64e5b37219681253fae671b314eaab5
+SHA1: bf8e56a84721e8ce807ae1e1b2c3b251569ec91a
+SHA256: 4a65900c31c3026c24d4ce3a1717e0a5866b51a24aea3651dea916ac9534dc56
+Section: admin
+Priority: optional
+Homepage: https://github.com/mawena/Coffre
+Description: sauvegardes chiffrées et dédupliquées, restauration simple
+ Coffre sauvegarde des dossiers et des bases (MySQL/MariaDB, PostgreSQL ou
+ toute commande) vers plusieurs destinations : dossier local, disque externe,
+ autre machine par SFTP, stockage distant (B2, S3…). Les données sont
+ chiffrées avant de partir et dédupliquées, au format restic. Rétention,
+ vérification par relecture réelle, rapport pour Vigie, minuteurs systemd.
+
+Package: coffre
+Version: 0.4.0
+Architecture: amd64
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 29908
+Depends: libc6 (>= 2.39), libgcc-s1, openssh-client
+Suggests: mariadb-client | default-mysql-client, postgresql-client
+Filename: pool/main/coffre/coffre_0.4.0_amd64.deb
+Size: 8118008
+MD5sum: 988e1e18d9e08b6a0765626ba53d0109
+SHA1: 02a906d5e5dfd4ac55cdda35362c3556fb011cba
+SHA256: 71de22e6fe863d407b6867a2bb8790311fd9061ec0d4073a233cd745bfa6c29b
+Section: admin
+Priority: optional
+Homepage: https://github.com/mawena/Coffre
+Description: sauvegardes chiffrées et dédupliquées, restauration simple
+ Coffre sauvegarde des dossiers et des bases (MySQL/MariaDB, PostgreSQL ou
+ toute commande) vers plusieurs destinations : dossier local, disque externe,
+ autre machine par SFTP, stockage distant (B2, S3…). Les données sont
+ chiffrées avant de partir et dédupliquées, au format restic. Rétention,
+ vérification par relecture réelle, rapport pour Vigie, minuteurs systemd.
+
 Package: gigit
 Version: 0.1.0-1
 Architecture: amd64
