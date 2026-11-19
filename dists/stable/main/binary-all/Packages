@@ -1405,6 +1405,43 @@ Description: multi-account switcher and usage assistant for Claude Code
  ccs-bureau, the web server in ccs-serveur.
 
 Package: ccs
+Version: 0.27.0
+Architecture: all
+Maintainer: mawena <gamligocharles@gmail.com>
+Installed-Size: 1315
+Depends: init-system-helpers (>= 1.52), mawena-depot, jq, gnupg, procps, python3 (>= 3.10), python3-gi, gir1.2-glib-2.0, python3-markdown-it, python3-urwid
+Recommends: ccs-bureau, gnome-terminal | x-terminal-emulator, python3-setproctitle, python3-qrcode, gpg-agent, pinentry-gnome3, curl
+Suggests: ccs-serveur, gnome-shell-extension-appindicator, ricochet-agent, rsync
+Filename: pool/main/ccs/ccs_0.27.0_all.deb
+Size: 392732
+MD5sum: 4545db73d9531d7f235c2d5f9b3ede43
+SHA1: 1ce22a201fd53a8ae7e50b5e7acb9330ff22cbac
+SHA256: 13b54f51fc8ff0cabe8dc7ea9c93d9b784cf0bfb0857cf764ee874f1c73a1331
+Section: utils
+Priority: optional
+Description: multi-account switcher and usage assistant for Claude Code
+ CCS keeps several Claude Code accounts on one machine and switches between
+ them with a single command, without logging out and in again.
+ .
+ It also watches the usage of every account (5-hour session and weekly
+ limits), forecasts when a session will run out, recommends the best account,
+ switches automatically before a limit is reached (running sessions follow
+ on their next request), orchestrates the 5-hour windows of all accounts
+ (chained and staggered during active hours, expiring quota used first),
+ sends desktop notifications, analyses local Claude Code
+ logs per project, model and hour, and can start a 5-hour window early.
+ .
+ Claude Code sessions can be resumed or started inside the application, in
+ tabs of an embedded terminal, and conversations can be renamed.
+ .
+ Includes the `ccs` command, the "CCS" GTK application, a top bar
+ indicator and a systemd user service.
+ .
+ This package holds the command line, the usage service, the per-user bridge
+ and the full-screen terminal interface (`ccs tui`). The GTK application is in
+ ccs-bureau, the web server in ccs-serveur.
+
+Package: ccs
 Version: 0.3.0
 Architecture: all
 Maintainer: mawena <gamligocharles@gmail.com>
@@ -2415,6 +2452,25 @@ Description: CCS, complete: command line, desktop application and server
  usage service, `ccs tui`), ccs-bureau (GTK application) and ccs-serveur (web
  interface and API, Ubuntu accounts and TOTP login).
 
+Package: ccs-all
+Source: ccs
+Version: 0.27.0
+Architecture: all
+Maintainer: mawena <gamligocharles@gmail.com>
+Installed-Size: 15
+Depends: ccs (= 0.27.0), ccs-bureau (= 0.27.0), ccs-serveur (= 0.27.0)
+Filename: pool/main/ccs/ccs-all_0.27.0_all.deb
+Size: 8600
+MD5sum: 66d0a171e3043eeb7d7967f194196451
+SHA1: f4b94d29d0c3f745e651f4df0bcea624dc2d9d3c
+SHA256: 5e89d98b6ee6c1705068834b77e0cecd65146795bd732cb98f4118158a146a5f
+Section: metapackages
+Priority: optional
+Description: CCS, complete: command line, desktop application and server
+ Metapackage that installs the three CCS packages at once: ccs (command line,
+ usage service, `ccs tui`), ccs-bureau (GTK application) and ccs-serveur (web
+ interface and API, Ubuntu accounts and TOTP login).
+
 Package: ccs-bureau
 Source: ccs
 Version: 0.11.0
@@ -3101,6 +3157,27 @@ Size: 176320
 MD5sum: 3f699412d24c366050be3fbdd441add3
 SHA1: fb4756b5f7d8ff4627231c55b3142ff0983ed818
 SHA256: 1b460c31ff8a1bb96573e90920fa40f1f7c3640fe89dab2c092b94d40184175e
+Section: utils
+Priority: optional
+Description: CCS desktop application (GTK) for several Claude Code accounts
+ The "CCS" GTK application of ccs: accounts and usage, Claude Code chat,
+ files and roadmap of each project, history, analysis, settings, and the
+ top bar indicator. It can also drive the projects of a CCS server (VPS).
+
+Package: ccs-bureau
+Source: ccs
+Version: 0.27.0
+Architecture: all
+Maintainer: mawena <gamligocharles@gmail.com>
+Installed-Size: 858
+Depends: ccs (= 0.27.0), python3-gi, python3-gi-cairo, gir1.2-gtk-4.0, gir1.2-adw-1 (>= 1.5), gir1.2-vte-3.91, gir1.2-gtksource-5, gir1.2-gtk-3.0, gir1.2-ayatanaappindicator3-0.1, python3-aiohttp
+Breaks: ccs (<< 0.11.0)
+Replaces: ccs (<< 0.11.0)
+Filename: pool/main/ccs/ccs-bureau_0.27.0_all.deb
+Size: 176398
+MD5sum: 1cb5f7feaea7eecf6fc2a31c20851b9f
+SHA1: b78501b8016905aacbb48282dfe2aada9e088608
+SHA256: 47fb65904eaaf2dc0be1eb9b86c27499dcdecab921d92e8a9e3d4fe8500d614b
 Section: utils
 Priority: optional
 Description: CCS desktop application (GTK) for several Claude Code accounts
@@ -3824,6 +3901,28 @@ Size: 227456
 MD5sum: 666efb8fccd75f5d7bd52ac28bb4c036
 SHA1: c5d6f6573373e5705007b23ce10806ee768c1eef
 SHA256: f3660647115e16679731a8b1f360ee2cba661cccdd2969dbe429ba0be82f7dd6
+Section: utils
+Priority: optional
+Description: CCS server: drive Claude Code from a browser, phone or terminal
+ Runs CCS on a server (VPS): a web interface (responsive, for phones) and an
+ API for the desktop application and `ccs tui`. Users log in with their
+ Ubuntu account (PAM, members of the "ccs" group, never root) and a
+ mandatory TOTP code. Services: ccs-auth (root, minimal), ccs-web
+ (unprivileged, 127.0.0.1:8420, behind a reverse proxy) and one bridge per
+ logged-in user.
+
+Package: ccs-serveur
+Source: ccs
+Version: 0.27.0
+Architecture: all
+Maintainer: mawena <gamligocharles@gmail.com>
+Installed-Size: 758
+Depends: ccs (= 0.27.0), python3-aiohttp, python3-pyotp, python3-qrcode, libpam0g, adduser, systemd
+Filename: pool/main/ccs/ccs-serveur_0.27.0_all.deb
+Size: 227916
+MD5sum: 5ffd693dcc1bcb5cac4e2ff688ab23bb
+SHA1: ff1625af040748eaf2d795305332613c82ee61de
+SHA256: b98a10eaf38d361382a743feb7d0477fab477a5f6953c775d47735e7b8f784ab
 Section: utils
 Priority: optional
 Description: CCS server: drive Claude Code from a browser, phone or terminal
