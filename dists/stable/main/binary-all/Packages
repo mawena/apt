@@ -5989,6 +5989,26 @@ Description: paquet de transition vers le dépôt APT unique de mawena
  transition retire l'ancienne source APT de Ricochet et peut ensuite rester
  installé sans risque.
 
+Package: ricochet-depot
+Version: 0.6.0
+Architecture: all
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 40
+Depends: mawena-depot
+Filename: pool/main/ricochet/ricochet-depot_0.6.0_all.deb
+Size: 2448
+MD5sum: 5c2c30d16233fcf1c427843805496556
+SHA1: 11ae6196f82efcdae7ce9f8ea91a77ff56b2babf
+SHA256: ec3972d3ed497516e6f80634438cf5151cde00e3d3f59c591039e31917f329c8
+Section: oldlibs
+Priority: optional
+Homepage: https://mawena.github.io/Ricochet/
+Description: paquet de transition vers le dépôt APT unique de mawena
+ Ricochet est désormais publié dans le dépôt APT unique de mawena
+ (https://apt.mawena.cloud), installé par le paquet mawena-depot. Ce paquet de
+ transition retire l'ancienne source APT de Ricochet et peut ensuite rester
+ installé sans risque.
+
 Package: sesame
 Version: 1.0.0
 Architecture: all
