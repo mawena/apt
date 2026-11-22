@@ -528,6 +528,28 @@ Description: serveur de comptes de l'appli GliGli
  (bloc JSON versionné) et relaie les mises à jour publiées sur GitHub.
  Un seul binaire, base SQLite, derrière nginx.
 
+Package: gligli-serveur
+Version: 0.1.1
+Architecture: amd64
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 3996
+Depends: libc6 (>= 2.34), libgcc-s1, mawena-depot
+Suggests: nginx
+Filename: pool/main/gligli/gligli-serveur_0.1.1_amd64.deb
+Size: 1642192
+MD5sum: 5810c03687bd2e52f3927f138b4ac4e5
+SHA1: d41cbfa09e62f9e73fcd07f2debb2bd886ecbb9b
+SHA256: 6a7009c8cdc8aa4648e97c72d7794a8f0700dc51fe98866eb2725af6538a5512
+Section: net
+Priority: optional
+Homepage: https://github.com/mawena/GliGli
+Description: serveur de comptes de l'appli GliGli
+ gligli-serveur garde les comptes de l'appli GliGli : nom et mot de passe
+ (Argon2id), ou connexion par Portier ou Google (OpenID Connect), un jeton
+ par appareil, codes d'invitation. Il garde la collection de chaque compte
+ (bloc JSON versionné) et relaie les mises à jour publiées sur GitHub.
+ Un seul binaire, base SQLite, derrière nginx.
+
 Package: portier
 Version: 0.1.0
 Architecture: amd64
