@@ -5913,6 +5913,44 @@ Description: several WhatsApp accounts at the same time
  .
  Palabre is not affiliated with WhatsApp or Meta.
 
+Package: palabre
+Version: 1.5.0
+Architecture: all
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 329
+Depends: mawena-depot, python3 (>= 3.10), python3-gi (>= 3.42), gir1.2-gtk-4.0 (>= 4.12), gir1.2-adw-1 (>= 1.5), gir1.2-webkit-6.0 (>= 2.46.1), bubblewrap
+Recommends: gstreamer1.0-plugins-good, gstreamer1.0-libav, librsvg2-common, xdg-desktop-portal-gnome | xdg-desktop-portal-gtk, gnome-shell-extension-appindicator, libgtk-4-media-gstreamer, sound-theme-freedesktop
+Suggests: hunspell-fr
+Filename: pool/main/palabre/palabre_1.5.0_all.deb
+Size: 75324
+MD5sum: b80ed0c41f4870eae00d9eefc5cde409
+SHA1: 93ea42c460922e2c06093d13b68bc3e702d8174d
+SHA256: 287d7b6d3678c08a9b8ddb169f19bc3d6cba93c69e0bd2dc4871dad50f4f535c
+Section: net
+Priority: optional
+Homepage: https://github.com/mawena/Palabre
+Description: several WhatsApp accounts at the same time
+ Palabre shows several WhatsApp Web accounts at the same time, each one in
+ its own isolated web session (separate cookies and storage), logged in with
+ a QR code and kept logged in between launches.
+ .
+ Accounts can be displayed side by side in a grid, in tabs, or one window per
+ account; any account can be detached into its own window and attached back
+ without reloading the page.
+ .
+ Each account has a name and a color, an unread message badge and its own
+ desktop notifications. Palabre also offers a system tray icon, a badge on the
+ dock icon, start with the session, keyboard shortcuts, per-account zoom, a
+ do-not-disturb mode and a privacy blur.
+ .
+ It uses WebKitGTK 6.0, GTK 4 and libadwaita from Ubuntu, and installs an
+ AppArmor profile so that the WebKit sandbox works on Ubuntu 24.04.
+ .
+ The package depends on mawena-depot, the signed APT repository of its
+ author (https://apt.mawena.cloud), so "apt upgrade" keeps Palabre up to date.
+ .
+ Palabre is not affiliated with WhatsApp or Meta.
+
 Package: ricochet-depot
 Version: 0.1.0
 Architecture: all
