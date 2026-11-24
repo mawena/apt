@@ -7382,6 +7382,21 @@ Description: source APT et clé du dépôt mawena
  Installe la source https://apt.mawena.cloud (Paquets Ubuntu de mawena) et la clé
  qui signe ses index, pour que apt upgrade apporte les nouvelles versions.
 
+Package: mawena-depot
+Version: 0.3.0
+Architecture: all
+Maintainer: Charles GAMLIGO <57989130+mawena@users.noreply.github.com>
+Filename: pool/main/depot/mawena-depot_0.3.0_all.deb
+Size: 1456
+MD5sum: f963eb88cf15464fc602e305715c5dfe
+SHA1: 4a7bd0c972dc0aacd8b3ade142303ea0289e8e97
+SHA256: 5cab7e737301aaec0b64a9adb02e112ba6ee86a2ef449330320aa5748c185439
+Section: misc
+Priority: optional
+Description: source APT et clé du dépôt mawena
+ Installe la source https://apt.mawena.cloud (Paquets Ubuntu de mawena) et la clé
+ qui signe ses index, pour que apt upgrade apporte les nouvelles versions.
+
 Package: palabre
 Version: 1.0.0
 Architecture: all
