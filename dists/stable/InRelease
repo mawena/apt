@@ -4,35 +4,35 @@ Hash: SHA512
 Architectures: amd64 all
 Codename: stable
 Components: main
-Date: Tue, 24 Nov 2026 12:21:21 +0000
+Date: Tue, 24 Nov 2026 12:58:24 +0000
 Description: Paquets Ubuntu de mawena
 Label: mawena
 Origin: mawena
 Suite: stable
 MD5Sum:
- 2309193a181dcd3818dc36f31c851669           439943 main/binary-all/Packages
- 9be8dfd6845982f92e8674ef39640b92            44733 main/binary-all/Packages.gz
+ 5ea1716aa39fbf1a71076d1bd8e4621e           444901 main/binary-all/Packages
+ 8522f99bce431fcbc70974bde5a96a81            45382 main/binary-all/Packages.gz
  fa8439961c4c1ce19bdc83a477858bf5            64494 main/binary-amd64/Packages
  c15a45438d87f41c5a3f8765d4e73205            10419 main/binary-amd64/Packages.gz
 SHA1:
- ab6350c4aeb013398a94f51b4920350f03db7d92           439943 main/binary-all/Packages
- b1609fd2a0abb7295ed87b7de235f8e9b43f2259            44733 main/binary-all/Packages.gz
+ 4c1d84b5b9e6b695b25a457f336719e672c70b13           444901 main/binary-all/Packages
+ 20e08815c350acd990a5bbd0eac8273c47ca0442            45382 main/binary-all/Packages.gz
  7b6143dc84ccaf63626038cb5fc6ee65988fbfc9            64494 main/binary-amd64/Packages
  08282ce05038f85fdb635ff2c5a8737fcd3bb235            10419 main/binary-amd64/Packages.gz
 SHA256:
- e103254a21fb932334c5b9cd4047002d400868c78e90a6ecdc6b0cd2ed1d76d7           439943 main/binary-all/Packages
- fadf8d6b7ff4ff427e9d6c9214f537e50e29800e9d56f39860ccc716f0faa4c4            44733 main/binary-all/Packages.gz
+ 28443baaef32e0e2b2ac68d47523712e9f5b29dd7410469829e65fb2d3b73762           444901 main/binary-all/Packages
+ 5d0e1a6ea0e90d5f3a14c91d68e3e100759aef628026fccdd2023a79218f4265            45382 main/binary-all/Packages.gz
  10eac41458dfa9ef23487a0ac2f52d683603c9839e1593831a140a4008ac5da7            64494 main/binary-amd64/Packages
  af316d1408ad74038d09519ebcc15db2fd69e29fb5d32637692c76b475affbba            10419 main/binary-amd64/Packages.gz
 SHA512:
- f41848051c36bbebf359d87559bc524815021e499c212cb8e34ceadd52781baadaef8c427877aee68368b196949d8ccd3896d8c2828cc51a4b3c2188b7bb1d69           439943 main/binary-all/Packages
- 00910337a5eaec553e1f938b4ad860d4b00ce8b72d0c059464b0d9a5612a75bfbfff6c5629a04b54e4bfcdc0bdbb6536b2c9e91f20d9c2dd00d9a6193684f122            44733 main/binary-all/Packages.gz
+ 27edd6730a6b20e6d88534e68e3ac1b6cfd1ad616fe6c4129c43532a89a9d6bfb5bcf79be9f001188cdee5f86d69a915f6b395b73064382f5ae852f613db07cb           444901 main/binary-all/Packages
+ f8c10e9ff2b89b4ebca857a55ec80658cbc31783bf993f4f4ca6f4c32d28859527b766ecf9e18561b8cec4f69fa40f673a4c5579ee3a6d71f2934ceed1fca7a4            45382 main/binary-all/Packages.gz
  06a6c809099ab88a0c4a0486765d631a89c458d413acfee98631705914ab18ba757748be62464cbabfecf0e7ae6d3f91c8c78f81123f547bce20bad72f9a2696            64494 main/binary-amd64/Packages
  7f9faae9effeba9fbd69b15c2fdfd6855630344646027c8347561fb65d5ebcbcecea190fbe6b2fbf13358592d8d0d5b0da8c1a0215e136d56cd40911ca385225            10419 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQRgoguyIckdrfOd1VtFawEpMPqQHQUCawWBQQAKCRBFawEpMPqQ
-HQqlAP95fCZlFIW3jm5RRY005WYMLxi4wYJvNMhOws7FbYxlEgD+MKXFeb9NsfDj
-ZB3pFVZbk4PUfKxCXf5L7M75smaX7w4=
-=oTwD
+iHUEARYKAB0WIQRgoguyIckdrfOd1VtFawEpMPqQHQUCawWJ8AAKCRBFawEpMPqQ
+HYehAQDmNKeRdpK3iPMcpWnp8whv9fGZr6XlGGmb+FiVM/n5jAEAsUsaDAV2Jvy+
+LE13dEWeS4G4UpMYKbKGDxp7qUN86gU=
+=E5h1
 -----END PGP SIGNATURE-----
