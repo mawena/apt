@@ -8332,6 +8332,45 @@ Description: low-latency viewer for USB HDMI capture cards
  then compressed to H.264 + AAC with ffmpeg in the background. A pattern
  shown on an HDMI output wired to the card measures the real end-to-end delay.
 
+Package: lucarne
+Version: 0.3.0
+Architecture: all
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 156
+Depends: mawena-depot, python3 (>= 3.10), python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1 (>= 1.4), gir1.2-gstreamer-1.0, gstreamer1.0-plugins-good, mpv, ffmpeg, gstreamer1.0-pulseaudio, pipewire-bin, pulseaudio-utils
+Recommends: gstreamer1.0-pipewire
+Filename: pool/main/lucarne/lucarne_0.3.0_all.deb
+Size: 42476
+MD5sum: 5b7bcd3a82ebf7036b8de4892bc30574
+SHA1: 53f234748a95bfc8fd047bec810377fe9dcd9e95
+SHA256: e04dbe3a5ebf3c436db6cd34462fdf59c1a2d45c8f45e8d6e54691cc06726e49
+Section: video
+Priority: optional
+Homepage: https://github.com/mawena/lucarne
+Description: low-latency viewer for USB HDMI capture cards
+ Lucarne shows the picture of a USB HDMI capture card (MS2109 and similar)
+ with as little delay as possible, and sends its sound to the chosen audio
+ output (Bluetooth headset, speakers, dock).
+ .
+ The picture is played by mpv tuned for live sources (no cache, no timing,
+ one image of swap chain) and the sound goes straight from the card to the
+ output through PipeWire (pw-loopback), so neither waits for the other.
+ .
+ A speed test measures every mode of the card (real frame rate, waiting time
+ and decoding time) and picks the fastest one. The card's sound is found
+ automatically (same USB device), cards and audio outputs are followed live
+ when plugged or unplugged, and settings are kept between launches.
+ .
+ A key (S) saves the picture as a PNG and another (R) records the video
+ with its sound: the raw MJPEG stream and the sound are saved while playing,
+ then compressed to H.264 + AAC with ffmpeg in the background. A pattern
+ shown on an HDMI output wired to the card measures the real end-to-end delay.
+ .
+ Recording can also be compressed live: the image is encoded to H.264 while
+ playing (2 to 4 GB per hour instead of 24 to 70 GB of raw video) and the
+ MP4 is ready a few seconds after stopping. The folders of the captures and
+ of the videos can be chosen.
+
 Package: mawena-depot
 Version: 0.1.0
 Architecture: all
