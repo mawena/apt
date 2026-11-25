@@ -1,28 +1,28 @@
 Architectures: amd64 all
 Codename: stable
 Components: main
-Date: Wed, 25 Nov 2026 18:12:53 +0000
+Date: Wed, 25 Nov 2026 18:21:36 +0000
 Description: Paquets Ubuntu de mawena
 Label: mawena
 Origin: mawena
 Suite: stable
 MD5Sum:
- 4448e5011090af6d237705ac3123e8ff           529964 main/binary-all/Packages
- 30a9cea000a074f2fc7990136c6c6b22            54032 main/binary-all/Packages.gz
+ 69b7568d2431dfb67c08f316ea020969           534592 main/binary-all/Packages
+ 24023fff8df4cdd1cd5ac678e4184455            54256 main/binary-all/Packages.gz
  b2e57ca2e198505826cef29e0a937d84            66106 main/binary-amd64/Packages
  b9ff75bf41ea6c606078f3c737186e45            10642 main/binary-amd64/Packages.gz
 SHA1:
- b5ffa52749d9594be4cfe1829d86d2e6236e1619           529964 main/binary-all/Packages
- 3990d75bfaa04cda0a1fc911312d0f1e9a8f71ed            54032 main/binary-all/Packages.gz
+ bfbd43a3e6597e975dc331cec04bffe1b66e4e92           534592 main/binary-all/Packages
+ 8f4128f846acfe6ec0f673bd57cc615da6cca575            54256 main/binary-all/Packages.gz
  c00c4272f6b5eb83f116beb9664353d121330632            66106 main/binary-amd64/Packages
  e06cf59098e271d3bc30131bd2983fa5975be34c            10642 main/binary-amd64/Packages.gz
 SHA256:
- d79046665643c06b81b9635a925cb587d14a25e103ecc875f41ebe7fe781f180           529964 main/binary-all/Packages
- 79fe95ffdb21e5e4ed3e3df2255f9ad9279ad9c47ecdd88d79c9c58dc96662ae            54032 main/binary-all/Packages.gz
+ c22141ef99fe7df63c47e011cb08a88cddebb5630934272cc6445c694fe6dc77           534592 main/binary-all/Packages
+ 4364b85d3b8ad0d8859e71d13eb76d2b8f4a97a57b2e192e8f39ebee905fe568            54256 main/binary-all/Packages.gz
  5d02a67ecc92f0f8d1cb1daee4ce8b84b533a7cbd2e7092f164652b7263f6189            66106 main/binary-amd64/Packages
  244530c715b2b3bd70695a622af9261b2248d0d3322ab1a28d91d7fd302411d5            10642 main/binary-amd64/Packages.gz
 SHA512:
- 2e8987d3f34fd4d10bac1af1f49f581966526be636fa6816202b055d23007a6b14a003cc48aaabd7751515e0f8193816116b09cddb7a24309bd9cbc25e3c39d5           529964 main/binary-all/Packages
- e26614c8f552d082204da54b70c454cd16c7d7b5ffe71023d7a0e00940e5e71eba1211add80f6a83eda1e3d2605b43a3e2586b94e34483a43118cf086fdb7308            54032 main/binary-all/Packages.gz
+ efebf0a10143d406ee12a467b05c04e322cd3af4965f0649e2ba97cbe7f3c59a42b892a038906af9ae009e07eb5ce9819472e85a52217d2dfc3a59216b149e0e           534592 main/binary-all/Packages
+ db082dfffc4fefc1e883cd35c75527097258ebaaad62056ad1287e0361cede595401228930c65afb54fa34e66ad064cd17e635f51d1d2b38fcaccdcc90d889ae            54256 main/binary-all/Packages.gz
  a1c0c985b14803bbfd8d392a855b42aaccd8f1dc796e5b5b93d59700cf655395ab73ac820854bb92cac8da411349a627657933b17a242515e9db948b77c46c54            66106 main/binary-amd64/Packages
  9046d9382c6e1725997f19e0395d296293dd691500bc9be9bd62765fb3a9240f1f9d11b1245a5d236b1e90be072af999b5546921dd2cc1e71a4c4205b1aee4bd            10642 main/binary-amd64/Packages.gz
