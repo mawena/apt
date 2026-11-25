@@ -1,3 +1,33 @@
+Package: antenne
+Version: 0.1.0
+Architecture: all
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 139
+Depends: mawena-depot, python3 (>= 3.10), hostapd, dnsmasq-base, iw, iptables, network-manager, pkexec, systemd
+Recommends: qrencode, gnome-shell (>= 46)
+Filename: pool/main/antenne/antenne_0.1.0_all.deb
+Size: 36350
+MD5sum: c0f7fe5499d5d5fe09377f56fc92254e
+SHA1: 578c9ba8b09ce4e7be884ec597c1e14bb761c6cd
+SHA256: e3fdd18759fa381a3d2a380c17fca5040f791b2f80accf1f346ee7fed8c33932
+Section: net
+Priority: optional
+Homepage: https://github.com/mawena/antenne
+Description: Wi-Fi hotspot that shares the connection without dropping the Wi-Fi
+ Antenne shares the PC's internet connection (Wi-Fi, Ethernet, phone
+ tethering) through a Wi-Fi access point, while the PC stays connected to
+ its own Wi-Fi network. NetworkManager cannot do this on cards such as the
+ Intel AX2xx (it forces the card back into station mode); Antenne runs
+ hostapd on a virtual interface instead, with dnsmasq for DHCP and NAT
+ rules that are always cleaned up.
+ .
+ Several hotspots can be saved (network name, password, WPA2/WPA3 or open,
+ hidden network, band and channel, client limit and isolation, address
+ range, DNS servers, start at boot, automatic stop when unused); one runs
+ at a time. A GNOME Shell extension adds a quick settings toggle (choose
+ the hotspot, password and QR code, connected devices) and a preferences
+ window. The "antenne" command does the same from a terminal.
+
 Package: ccs
 Version: 0.1.0
 Architecture: all
