@@ -8298,6 +8298,40 @@ Description: low-latency viewer for USB HDMI capture cards
  automatically (same USB device), cards and audio outputs are followed live
  when plugged or unplugged, and settings are kept between launches.
 
+Package: lucarne
+Version: 0.2.0
+Architecture: all
+Maintainer: mawena <57989130+mawena@users.noreply.github.com>
+Installed-Size: 143
+Depends: mawena-depot, python3 (>= 3.10), python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1 (>= 1.4), gir1.2-gstreamer-1.0, gstreamer1.0-plugins-good, mpv, ffmpeg, gstreamer1.0-pulseaudio, pipewire-bin, pulseaudio-utils
+Recommends: gstreamer1.0-pipewire
+Filename: pool/main/lucarne/lucarne_0.2.0_all.deb
+Size: 38768
+MD5sum: 6e660d2dcd73b357e581712352bbfd0a
+SHA1: bc7e0aae8f90bdb0a6d27e5b3fcce279b0a74915
+SHA256: ecd82ecd7c25eab98b2bca611b7654cfbfac6c7645c31e08c70218c62879c4a8
+Section: video
+Priority: optional
+Homepage: https://github.com/mawena/lucarne
+Description: low-latency viewer for USB HDMI capture cards
+ Lucarne shows the picture of a USB HDMI capture card (MS2109 and similar)
+ with as little delay as possible, and sends its sound to the chosen audio
+ output (Bluetooth headset, speakers, dock).
+ .
+ The picture is played by mpv tuned for live sources (no cache, no timing,
+ one image of swap chain) and the sound goes straight from the card to the
+ output through PipeWire (pw-loopback), so neither waits for the other.
+ .
+ A speed test measures every mode of the card (real frame rate, waiting time
+ and decoding time) and picks the fastest one. The card's sound is found
+ automatically (same USB device), cards and audio outputs are followed live
+ when plugged or unplugged, and settings are kept between launches.
+ .
+ A key (S) saves the picture as a PNG and another (R) records the video
+ with its sound: the raw MJPEG stream and the sound are saved while playing,
+ then compressed to H.264 + AAC with ffmpeg in the background. A pattern
+ shown on an HDMI output wired to the card measures the real end-to-end delay.
+
 Package: mawena-depot
 Version: 0.1.0
 Architecture: all
