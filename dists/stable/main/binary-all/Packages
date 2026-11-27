@@ -9131,6 +9131,28 @@ Description: RAM guard that freezes the program filling the memory
  .
  Complements systemd-oomd and earlyoom.
 
+Package: hangar-serveur
+Source: hangar
+Version: 0.1.0
+Architecture: all
+Maintainer: mawena <gamligocharles@gmail.com>
+Installed-Size: 92
+Depends: init-system-helpers (>= 1.52), python3 (>= 3.11), python3-fastapi, python3-uvicorn, python3-httpx, aria2, sshfs, fuse3
+Recommends: rclone, mawena-depot
+Filename: pool/main/hangar/hangar-serveur_0.1.0_all.deb
+Size: 22478
+MD5sum: 7a0e38b5c7ddaa2590672a56d8650331
+SHA1: fdf1cb7855a8e607b94ae1e56f3d40f8a92c3b39
+SHA256: 72411ccd4911f1b5852570564b3ccbd637b33640f1cc5c46a1d0f75573667586
+Section: net
+Priority: optional
+Description: Hangar server: fills a Storage Box from links, torrents and uploads
+ Hangar receives direct links, magnets, .torrent files and resumable uploads
+ (tus) from its iPhone, desktop and Android apps, and writes them straight to
+ a Hetzner Storage Box mounted with sshfs, without a local buffer the size of
+ the file. It keeps a task queue with progress, speed, pause, resume after a
+ restart, cancel and history, and offers a file browser for the Box.
+
 Package: lucarne
 Version: 0.1.0
 Architecture: all
