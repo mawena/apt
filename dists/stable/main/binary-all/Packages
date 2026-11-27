@@ -9173,6 +9173,27 @@ Description: Hangar desktop app: send links, torrents and files to a Storage Box
  resumable chunks (tus) read in place, shows the task queue with progress and
  controls, browses the Storage Box and can be the default magnet handler.
 
+Package: hangar-bureau
+Source: hangar
+Version: 1.1.0
+Architecture: all
+Maintainer: mawena <gamligocharles@gmail.com>
+Installed-Size: 67
+Depends: python3 (>= 3.11), python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1, python3-httpx
+Recommends: mawena-depot
+Filename: pool/main/hangar/hangar-bureau_1.1.0_all.deb
+Size: 14842
+MD5sum: b0ec77aaa44d7248f1a80ad11258bff7
+SHA1: 6e7ad3fad891934ac1eed77ac1e72e7c58e065a9
+SHA256: 6fe8ba3ca03080cd0ba40bf96efdce6b8f4cf26c07c4955993e6b783320831a2
+Section: net
+Priority: optional
+Description: Hangar desktop app: send links, torrents and files to a Storage Box
+ GTK 4 and libadwaita client for the Hangar server. It hands direct links,
+ magnets and .torrent files to the server, uploads local files of any size by
+ resumable chunks (tus) read in place, shows the task queue with progress and
+ controls, browses the Storage Box and can be the default magnet handler.
+
 Package: hangar-serveur
 Source: hangar
 Version: 0.1.0
@@ -9252,6 +9273,28 @@ Size: 23020
 MD5sum: fb26b22f6e8adf1c28c9a696e88fb03d
 SHA1: 18bd8076bfed78fa6d4d44cdb4a7d4f7d2bdc91d
 SHA256: 32697ee88af1d93eedb93d3b429ff1ffdff6be222516816ef911a313c8abaf18
+Section: net
+Priority: optional
+Description: Hangar server: fills a Storage Box from links, torrents and uploads
+ Hangar receives direct links, magnets, .torrent files and resumable uploads
+ (tus) from its iPhone, desktop and Android apps, and writes them straight to
+ a Hetzner Storage Box mounted with sshfs, without a local buffer the size of
+ the file. It keeps a task queue with progress, speed, pause, resume after a
+ restart, cancel and history, and offers a file browser for the Box.
+
+Package: hangar-serveur
+Source: hangar
+Version: 1.1.0
+Architecture: all
+Maintainer: mawena <gamligocharles@gmail.com>
+Installed-Size: 159
+Depends: init-system-helpers (>= 1.52), python3 (>= 3.11), python3-fastapi, python3-uvicorn, python3-httpx, aria2, sshfs, fuse3
+Recommends: rclone, mawena-depot
+Filename: pool/main/hangar/hangar-serveur_1.1.0_all.deb
+Size: 52310
+MD5sum: 7532891be3d40ef108551be2795ab32c
+SHA1: e43f0f3af98ba8a4dcfc64c53aad5cf752afd612
+SHA256: 557ba10a8f9460d9cb1aaf3398d0a2010e2b92ca4204c7a67d9a97098d5a0686
 Section: net
 Priority: optional
 Description: Hangar server: fills a Storage Box from links, torrents and uploads
