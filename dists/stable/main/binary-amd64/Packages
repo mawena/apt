@@ -488,6 +488,25 @@ Description: client non officiel de pornpics.com (adultes)
  visionneuse plein écran, favoris, enregistrement des photos, code de verrouillage.
 
 Package: gligli
+Version: 1.11.1
+Architecture: amd64
+Maintainer: Charles GAMLIGO <57989130+mawena@users.noreply.github.com>
+Installed-Size: 66456
+Depends: mawena-depot, libmpv2 | libmpv1, libgtk-3-0t64 | libgtk-3-0, libglib2.0-0t64 | libglib2.0-0
+Recommends: zenity, xdg-utils
+Filename: pool/main/gligli/gligli_1.11.1_amd64.deb
+Size: 20496842
+MD5sum: 905718cf0b29538e814302b7dbfed11f
+SHA1: 3f05d8661e0b19cc0be467b941a80502d251c6cd
+SHA256: 4438751777b043ee6ea73ceab8fde484011c3add9eddf3aee6c9d6bf1550e6a1
+Section: graphics
+Priority: optional
+Homepage: https://github.com/mawena/GliGli
+Description: client non officiel de pornpics.com (adultes)
+ Galeries récentes et populaires, catégories, modèles, chaînes, recherche,
+ visionneuse plein écran, favoris, enregistrement des photos, code de verrouillage.
+
+Package: gligli
 Version: 1.2.0
 Architecture: amd64
 Maintainer: Charles GAMLIGO <57989130+mawena@users.noreply.github.com>
