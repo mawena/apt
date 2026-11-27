@@ -9153,6 +9153,28 @@ Description: Hangar server: fills a Storage Box from links, torrents and uploads
  the file. It keeps a task queue with progress, speed, pause, resume after a
  restart, cancel and history, and offers a file browser for the Box.
 
+Package: hangar-serveur
+Source: hangar
+Version: 0.2.0
+Architecture: all
+Maintainer: mawena <gamligocharles@gmail.com>
+Installed-Size: 93
+Depends: init-system-helpers (>= 1.52), python3 (>= 3.11), python3-fastapi, python3-uvicorn, python3-httpx, aria2, sshfs, fuse3
+Recommends: rclone, mawena-depot
+Filename: pool/main/hangar/hangar-serveur_0.2.0_all.deb
+Size: 22748
+MD5sum: 848422bf22dd4a6edab312e3b6f85a2d
+SHA1: 37cc35b49be1009696b9b3805c088829f60f0d1b
+SHA256: fd64adbe548581c03368ae3b6353a3d0d391664660fc69ab8baa2b493c1d62b6
+Section: net
+Priority: optional
+Description: Hangar server: fills a Storage Box from links, torrents and uploads
+ Hangar receives direct links, magnets, .torrent files and resumable uploads
+ (tus) from its iPhone, desktop and Android apps, and writes them straight to
+ a Hetzner Storage Box mounted with sshfs, without a local buffer the size of
+ the file. It keeps a task queue with progress, speed, pause, resume after a
+ restart, cancel and history, and offers a file browser for the Box.
+
 Package: lucarne
 Version: 0.1.0
 Architecture: all
